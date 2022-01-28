@@ -38,7 +38,8 @@ table{
 .tablaE{
     background-color: rgb(102, 76, 105);
     color: lightcyan;
-    
+    text-align: center;
+    font-family: Century;
 }
 input{
 	background-color: #65d6c7;
@@ -53,4 +54,24 @@ input{
 h2{
     color: rgb(0, 228, 121);
     font-family:Century;
+}
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .tableE{
+        width: 100%;
+    }
+    .tableE img{
+        width: 100px;
+        height: 100px;    
+    }
+    body{
+        background-image: url("../img/4k.jpg");
+    } 
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+   
+    body{
+        background-image: url("../img/4k.jpg");
+    }
 }
