@@ -75,10 +75,10 @@ function borrar(i){
 	indice = i;
 	let libro = JSON.parse(libros[indice]);
 	let nombre = libro.nombre;
-	if(confirm("¿Enserio terminaste la tarea del curso de '"+nombre+"'?")){
-		libros.splice(indice,1);
+	if(confirm("¿Enserio terminaste la tarea del curso de '"+libro.curso+"'?")){
+		libros.splice(indice,3);
 		localStorage.setItem("libros",JSON.stringify(libros));
-		alert("La tarea de '"+nombre+"' ha sido enviada");
+		alert("La tarea del curso '"+libro.curso+"' ha sido enviada");
 	}
 
 	lista(); //actualizar la lista de los datos existentes en el localStorage
